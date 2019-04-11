@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.BookDao">
+
+    <!--实体类和数据库表字段一致。不需要resultMap-->
+    <!--<resultMap id="bookResultMap" type="com.baizhi.entity.Book">
+        <result property="id" column=""></result>
+
+    </resultMap>-->
+    <select id="selectAll" resultType="Book">
+        select*from book
+    </select>
+</mapper>
